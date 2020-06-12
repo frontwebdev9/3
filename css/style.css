@@ -22,6 +22,9 @@ header {
 h1 {
 	margin: 0 auto;
 }
+p {
+	font-weight: bold;
+}
 fieldset {
 	border:none;
 	margin: 10px 0;
@@ -42,17 +45,27 @@ textarea {
 footer p {
 	font: italic 0.5em darkgrey;
 }
-label {
-	margin: 5px 0;
-}
-input:focus {
+input:focus,
+textarea:focus {
 	background-color:#fcfadc;
 }
 input[type="submit"]{
 	background-color: #46bdb5;
+	width: 95%;
 }
 hr {
 	border: 1px solid;
+}
+option {
+	font-size: .5em;
+	color: red;
+	opacity:5;
+}
+.flex-pair label {
+	margin: 5px 0;
+}
+.flex-check label {
+	margin: 5px 10px;
 }
 .contact-info label{
 	text-align: left;
@@ -61,17 +74,25 @@ hr {
 		display: flex;
 		flex-direction: column;
 	}
-:required {
-		font-style: italic;
-		opacity: 2;
-		text-align: right;
+.flex-check {
+	display: flex;
+}
+.interests {
+	display: flex;
+	flex-direction: column;
 }
 .form-type {
 	display: flex;
 	align-items: flex-start;
 }
+
 #zipcode {
 max-width: 50%;
+}
+
+:required {
+	text-align: right;
+	padding-right: 15px;
 }
 
 
@@ -79,5 +100,17 @@ max-width: 50%;
 	.flex-pair {
 		flex-direction: row;
 	}
+	.contact-info .flex-pair {
+		flex-grow:1;
+		flex-basis:75%;
+	}
+	.contact-info label {
+  flex-basis: 25%;
+  height: 50px;
+  margin: auto 0;
+}
+.form-type {
+	text-align: left;
+}
 
 }
