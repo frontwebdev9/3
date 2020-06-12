@@ -14,12 +14,10 @@ header {
   background-color: black;
 	color: white;
   text-transform: uppercase;
-	text-align: center;
   font-style: oblique;
   letter-spacing: 0.2em;
   font-weight: 900;
 	padding: 0.5em;
-	width: 100vw;
 	}
 h1 {
 	margin: 0 auto;
