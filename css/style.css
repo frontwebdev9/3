@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	margin: 0 auto;
+}
+body {
+	margin: 0 auto;
+	max-width: 768px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+header {
+  background-color: black;
+	color: white;
+  text-transform: uppercase;
+  font-style: oblique;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+	padding: 0.5em;
+	}
+h1 {
+	margin: 0 auto;
+}
+fieldset {
+	border:none;
+	margin: 10px 0;
+}
+legend {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+input,
+select,
+textarea {
+	background-color: #f1faeb;
+	margin: 5px 0;
+	padding: 10px 5px;
+	border: 1px solid white;
+	border-radius:5%;
+}
+footer p {
+	font: italic 0.5em darkgrey;
+}
+label {
+	margin: 5px 0;
+}
+input:focus {
+	background-color:#fcfadc;
+}
+input[type="submit"]{
+	background-color: #46bdb5;
+}
+hr {
+	border: 1px solid;
+}
+.contact-info label{
+	text-align: left;
+}
+.flex-pair {
+		display: flex;
+		flex-direction: column;
+	}
+:required {
+		font-style: italic;
+		opacity: 2;
+		text-align: right;
+}
+.form-type {
+	display: flex;
+	align-items: flex-start;
+}
+#zipcode {
+max-width: 50%;
+}
