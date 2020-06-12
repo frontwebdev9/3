@@ -7,7 +7,7 @@ html {
 body {
 	margin: 0 auto;
 	max-width: 768px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
 }
 form {
@@ -65,6 +65,10 @@ input[type="submit"]{
 }
 input[type="submit"]:enabled {
 	cursor: pointer;
+}
+label {
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 hr {
 	border: 1px solid;
