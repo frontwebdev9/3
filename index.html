@@ -4,103 +4,111 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!-- styling links -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
     <title> Flexbox & Form  </title>
   </head>
   <body>
     <header>
-      <h1>The code review</h1>
+      <h1>The code review2</h1>
     </header>
-<main>
-      <h2>Sign up for our newsletter</h2>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
+  <main>
+        <h2>Sign up for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
 
-    <form class="registration" action="index.html" method="post">
-                      <hr class="thick">
-                      <hr>
-        <fieldset class="contact-info">
-            <legend>Contact information</legend>
+      <form class="registration" action="index.html" method="post">
+                        <hr class="thick">
+                        <hr>
+          <fieldset class="contact-info">
+          <legend>Contact information</legend>
 
-            <div class="flex-pair">
-              <label for="name">Full name</label>
-              <input type="text" id="name" name="user_name" required placeholder="required">
-            </div>
+              <div class="flex-pair">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="user_name" required placeholder="required" autocomplete="off">
+              </div>
 
-            <div class="flex-pair">
-              <label for="mail">E-mail address</label>
-              <input type="email" id="mail" name="user_email" required placeholder="required">
-            </div>
+              <div class="flex-pair">
+                <label for="mail">E-mail address</label>
+                <input type="email" id="mail" name="user_email" required placeholder="required" autocomplete="off">
+              </div>
 
-            <div class="flex-pair">
-              <label for="phone">Phone number</label>
-              <input type="tel" id="phone" name="user_phone" placeholder="optional">
-            </div>
+              <div class="flex-pair">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="user_phone" placeholder="optional" autocomplete="off">
+              </div>
 
-            <div class="flex-pair">
-              <label for="address">Street address</label>
-              <input type="text" id="address" name="user_address" placeholder="optional">
-            </div>
+              <div class="flex-pair">
+                <label for="address">Street address</label>
+                <input type="text" id="address" name="user_address" placeholder="optional" autocomplete="off">
+              </div>
 
-            <div class="flex-pair">
-              <label for="city">City</label>
-              <input type="text" id="city" name="user_city" placeholder="optional">
-            </div>
+              <div class="flex-pair">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city" placeholder="optional" autocomplete="off">
+              </div>
 
-            <div class="flex-pair">
-              <label for="state">State</label>
-              <select id="state" name="user_state" required placeholder="Choose state">
-                    <option value="" disabled selected hidden>Choose state</option>
-                    <option value="aa">AA</option>
-                    <option value="bb">BB</option>
-                    <option value="cc">CC</option>
-                    <option value="dd">DD</option>
-                    <option value="ee">EE</option>
-                </select>
-            </div>
+              <div class="flex-pair">
+                <label for="state">State</label>
+                <select id="state" name="user_state" required="Choose state" autocomplete="off">
+                      <option value="" disabled selected hidden></option>
+                      <option value="AnkMorkpork">AnkMorkpork</option>
+                      <option value="Elvenar">Elvenar</option>
+                      <option value="Tatooine">Tatooine</option>
+                      <option value="Westero">Westeros</option>
+                      <option value="Hogsmead">Hogsmead</option>
+                      <option value="BreakingBad">BreakingBad</option>
+                      <option value="Fleebag">Fleebag</option>
+                      <option value="Sense8">Sense8</option>
+                      <option value="Land of Mirrors">Land of Mirrors</option>
+                      <option value="FairyTales">FairyTales</option>
+                  </select>
+              </div>
 
-            <div class="flex-pair">
-              <label for="zipcode">Zip code</label>
-              <input type="text" id="zipcode" name="user_zipcode">
-            </div>
-        </fieldset>
-                          <hr>
-        <fieldset class="form-type">
-            <legend>Newsletter</legend>
-            <label>Select the newsletters you would like to receive:</label>
-            <div class="flex-check">
-              <input type="checkbox" id="selection1" name="user-selection">
-              <label for="selection1">HTML News</label>
-            </div>
-            <div class="flex-check">
-              <input type="checkbox" id="selection2" name="user_selection">
-              <label for="selection2">CSS News</label>
-            </div>
-            <div class="flex-check">
-              <input type="checkbox" id="selection3" name="user_selection">
-              <label for="selection3">Javascript News</label>
-            </div>
-            <label>Newsletter format</label>
-            <div class="flex-check">
-              <input type="radio" id="html" name="user_choice">
-              <label for="html">HTML format</label>
-            </div>
-            <div class="flex-check">
-              <input type="radio" id="doc" name="user_choice">
-              <label for="doc">Plain text</label>
-            </div>
+              <div class="flex-pair">
+                <label for="zipcode">Zip code</label>
+                <input type="text" id="zipcode" name="user_zipcode" autocomplete="off">
+              </div>
+          </fieldset>
+                            <hr>
+          <fieldset class="form-type">
+              <legend>Newsletter</legend>
+              <label>Select the newsletters you would like to receive:</label>
+              <div class="flex-check">
+                <input type="checkbox" id="selection1" name="user-selection" autocomplete="off">
+                <label for="selection1">HTML News</label>
+              </div>
+              <div class="flex-check">
+                <input type="checkbox" id="selection2" name="user_selection" autocomplete="off">
+                <label for="selection2">CSS News</label>
+              </div>
+              <div class="flex-check">
+                <input type="checkbox" id="selection3" name="user_selection" autocomplete="off">
+                <label for="selection3">Javascript News</label>
+              </div>
+              <label>Newsletter format</label>
+              <div class="flex-check">
+                <input type="radio" id="html" name="user_choice" ">
+                <label for="html">HTML format</label>
+              </div>
+              <div class="flex-check">
+                <input type="radio" id="doc" name="user_choice" autocomplete="off">
+                <label for="doc">Plain text</label>
+              </div>
 
-            <div class="interests">
-              <label for="interests">Other topics you'd like to hear about:</label>
-              <textarea id="interests" name="user_interests"></textarea>
-            </div>
-        </fieldset>
+              <div class="interests">
+                <label for="interests">Other topics you'd like to hear about:</label>
+                <textarea id="interests" name="user_interests" autocomplete="off"></textarea>
+              </div>
+          </fieldset>
 
-        <div class="button">
-          <input class="btn default" type="submit" value="Sign-up">
-        </div>
-    </form>
+          <div class="button">
+            <input class="btn default" type="submit" value="Sign-up">
+          </div>
+      </form>
     </main>
     <footer>
       <p>Copyright The Code Review</p>

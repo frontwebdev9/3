@@ -1,27 +1,27 @@
 * {
 	box-sizing: border-box;
 }
-html {
-	margin: 0 auto;
-}
+/*  */
 body {
-	margin: 0 auto;
+	margin: 10px auto;
 	max-width: 768px;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	text-align: center;
+	border: solid 2px rgb(102, 129, 102);
 }
 form {
-	background: #e8fbfc;
+	background: #82b6a0;
 }
 header {
-  background-color: darkgreen;
-	color: white;
+  background-color: rgb(102, 129, 102);
+  color: white;
   text-transform: uppercase;
   font-style: oblique;
   letter-spacing: 0.2em;
   font-weight: 900;
-	padding: 0.5em;
-	}
+  padding: 0.5em;
+  max-width: 768px;
+}
 h1 {
 	margin: 0 auto;
 }
@@ -39,16 +39,18 @@ legend {
 }
 input,
 select,
-textarea {
-	background-color: #f1faeb;
+textarea,
+option {
+	background-color:white;
 	margin: 5px 0;
 	padding: 10px 5px;
 	border: 1px solid white;
 	border-radius:7px;
 	transition: .5s
 }
+
 footer p {
-	font: italic 0.5em darkgrey;
+	font: italic 0.8em darkgrey;
 }
 input:hover {
 opacity:1;
@@ -57,11 +59,15 @@ input:focus,
 textarea:focus {
 	background-color:#fcfadc;
 }
+
 input[type="submit"]{
-	background-color: #46bdb5;
+	background-color: rgb(102, 129, 102);
 	color: white;
 	border-radius: 9px;
 	width: 95%;
+}
+input[type="submit"]:hover{
+	background-color: rgb(116, 143, 134);
 }
 input[type="submit"]:enabled {
 	cursor: pointer;
@@ -99,10 +105,12 @@ option {
 .interests {
 	display: flex;
 	flex-direction: column;
+	flex-basis: 75%;
 }
 .form-type {
 	display: flex;
-	align-items: flex-start;
+	flex-direction: column;
+	/* align-items: flex-start; */
 }
 
 #zipcode {
